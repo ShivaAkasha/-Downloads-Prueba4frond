@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Vehiculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<ul class="nav justify-content-center" style="background-color: antiquewhite;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" style="color: cornflowerblue;" href="inicio.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: black; color: blue;">
+          Vehiculos
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="vehiculo.html">Ver Vehiculos</a></li>
+          <li><a class="dropdown-item" href="agregarr.html">Agregar Vehiculo</a></li>
+          <li><a class="dropdown-item" href="facturas.html">Ver Facturas</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: blue;" href="registro.html" >Registrate</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: blue;" href="login.html">Iniciar sesion</a>
+    </li>
+  </ul>
+  <body style="background-color:aqua;">
+    <div class="container mt-5">
+        <h1 class="mb-4" style="color:blue;">Automotora All Might</h1>
+
+        <!-- Formulario para agregar servidores -->
+        <div class="card mb-4" style="background-color: cornflowerblue;">
+            <div class="card-header">Agregar Nuevo Vehiculo</div>
+            <div class="card-body">
+                <form id="form-vehiculo">
+                    <div class="mb-3">
+                        <label for="modelo" class="form-label">Modelo</label>
+                        <input type="text" class="form-control" id="modelo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="years" class="form-label">Año</label>
+                        <input type="text" class="form-control" id="years" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="id" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="text" class="form-control" id="precio" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Agregar Vehiculo</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', renderizarVehiculo);
+        </script>
+    </body>
+    </html>
